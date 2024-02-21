@@ -83,13 +83,13 @@ class OnboardingViewController: UIViewController {
 
 
 extension OnboardingViewController {
-    func configureUI() {
+    private func configureUI() {
         setCollectionView()
         setNextButton()
         setSkipButton()
         setPageControl()
     }
-    func setCollectionView() {
+    private func setCollectionView() {
         view.addSubview(collectionView)
         
         collectionView.delegate = self
@@ -100,7 +100,7 @@ extension OnboardingViewController {
             make.bottom.left.right.equalToSuperview()
         }
     }
-    func setNextButton() {
+    private func setNextButton() {
         view.addSubview(nextButton)
         
         nextButton.snp.makeConstraints { make in
@@ -110,15 +110,17 @@ extension OnboardingViewController {
         }
         nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
     }
-    func setSkipButton() {
+    private func setSkipButton() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: skipButton)
         
         skipButton.snp.makeConstraints { make in
             make.width.equalTo(70)
             make.height.equalTo(24)
         }
+        
+        skipButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
     }
-    func setPageControl() {
+    private func setPageControl() {
         view.addSubview(pageControl)
         
         pageControl.snp.makeConstraints { make in
@@ -159,7 +161,6 @@ extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDa
         pageControl.currentPage = currentPage
     }
 }
-
 
 extension OnboardingViewController {
     @objc func nextButtonTapped() {

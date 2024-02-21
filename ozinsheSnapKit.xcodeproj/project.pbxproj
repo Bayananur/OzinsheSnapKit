@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6F0D7EAD2B8530DF007C7598 /* SVProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0D7EAC2B8530DF007C7598 /* SVProgressHUD */; };
+		6F0D7EB22B85B516007C7598 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D7EB12B85B516007C7598 /* TextField.swift */; };
+		6F0D7EB42B85C2EB007C7598 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0D7EB32B85C2EB007C7598 /* SignUpViewController.swift */; };
 		6F4AD4E62B80986000CEB90C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4AD4E52B80986000CEB90C /* SnapKit */; };
 		6F4AD4E92B80987600CEB90C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4AD4E82B80987600CEB90C /* Alamofire */; };
 		6F4AD4EC2B80988D00CEB90C /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 6F4AD4EB2B80988D00CEB90C /* SwiftyJSON */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6F0D7EB12B85B516007C7598 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		6F0D7EB32B85C2EB007C7598 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		92A9BC1B2B5D55A500E3E2B2 /* ozinsheSnapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ozinsheSnapKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A9BC1E2B5D55A500E3E2B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A9BC202B5D55A500E3E2B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F0D7EAE2B8536C4007C7598 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		92A9BC122B5D55A500E3E2B2 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +97,7 @@
 		92A9BC1D2B5D55A500E3E2B2 /* ozinsheSnapKit */ = {
 			isa = PBXGroup;
 			children = (
+				6F0D7EAE2B8536C4007C7598 /* Extensions */,
 				92B5946B2B7FE2DC00F2D08F /* Controllers */,
 				92B5946A2B7FDF8D00F2D08F /* Resources */,
 				92B594692B7FDF6500F2D08F /* Application */,
@@ -122,6 +134,7 @@
 				92A9BC432B7B978B00E3E2B2 /* GradientView.swift */,
 				92B5945F2B7BA3A300F2D08F /* Button.swift */,
 				92B594632B7BBDD300F2D08F /* ExtendedPageControll.swift */,
+				6F0D7EB12B85B516007C7598 /* TextField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -158,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				92B594652B7BC54500F2D08F /* SignInViewController.swift */,
+				6F0D7EB32B85C2EB007C7598 /* SignUpViewController.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -251,9 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F0D7EB42B85C2EB007C7598 /* SignUpViewController.swift in Sources */,
 				92B594642B7BBDD300F2D08F /* ExtendedPageControll.swift in Sources */,
 				92B594602B7BA3A300F2D08F /* Button.swift in Sources */,
 				92B594662B7BC54500F2D08F /* SignInViewController.swift in Sources */,
+				6F0D7EB22B85B516007C7598 /* TextField.swift in Sources */,
 				92A9BC232B5D55A500E3E2B2 /* OnboardingViewController.swift in Sources */,
 				92A9BC422B7B873500E3E2B2 /* OnboardingModel.swift in Sources */,
 				92A9BC442B7B978B00E3E2B2 /* GradientView.swift in Sources */,

@@ -17,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
        // navigationController.navigationBar.isHidden = true // скрыть навигационную панель, если она не нужна
        // window?.rootViewController = OnboardingViewController()
        // window?.makeKeyAndVisible()
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear], for: .normal)
+//        navigationBar.tintColor = UIColor(named: "backButtonColor")
+        UINavigationBar.appearance().tintColor = UIColor(named: "black")
+        
+        if let navigationController = window?.rootViewController as? UINavigationController,
+           let backButton = navigationController.navigationBar.backItem?.backBarButtonItem {
+            backButton.setBackButtonTitlePositionAdjustment(UIOffset(horizontal: 24, vertical: 0), for: .default)
+        }
      return true
     }
 
